@@ -17,7 +17,7 @@ def fetch_movies_url
 end
 
 def scrape_movie (url)
-  parsed_url = Nokogiri::HTML(open(url).read)
+  parsed_url = Nokogiri::HTML(open(url, "Accept-Language" =>  "en").read)
   movie_name_year = parsed_url.search(".title_wrapper h1").text.split("(")
   movie_name = movie_name_year.first.gsub("&nbsp;","")
   movie_year = movie_name_year.last.gsub(")","").gsub(" ", "")
