@@ -1,5 +1,10 @@
 # data for #fetch_movies_url:
-[
+require_relative "scraper.rb"
+hash{}
+
+
+
+movies =[
   "http://www.imdb.com/title/tt0111161/",
   "http://www.imdb.com/title/tt0068646/",
   "http://www.imdb.com/title/tt0071562/",

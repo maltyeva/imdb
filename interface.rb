@@ -7,3 +7,4 @@
 #put 5 hashes into an array [5]
 #convert the information to yml
 #store the information to yml
+# domingo is the best
