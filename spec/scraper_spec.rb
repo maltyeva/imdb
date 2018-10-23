@@ -1,8 +1,19 @@
 # data for #fetch_movies_url:
-require_relative "scraper.rb"
-hash{}
+require_relative "../scraper.rb"
 
-
+describe "fetch_movies_url" do
+  it 'Should return an array of 5 movies' do
+    actual_value = fetch_movies_url
+    expected_value = [
+    "http://www.imdb.com/title/tt0111161/",
+    "http://www.imdb.com/title/tt0068646/",
+    "http://www.imdb.com/title/tt0071562/",
+    "http://www.imdb.com/title/tt0468569/",
+    "http://www.imdb.com/title/tt0050083/"
+  ]
+  expect(actual_value).to eq(expected_value)
+  end
+end
 
 movies =[
   "http://www.imdb.com/title/tt0111161/",
